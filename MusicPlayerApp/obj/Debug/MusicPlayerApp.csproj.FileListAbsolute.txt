@@ -1,0 +1,15 @@
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\bin\Debug\MusicPlayerApp.exe.config
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\bin\Debug\MusicPlayerApp.exe
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\bin\Debug\MusicPlayerApp.pdb
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\bin\Debug\Interop.WMPLib.dll
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\Interop.WMPLib.dll
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.csproj.ResolveComReference.cache
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.MusicPlayerApp.resources
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.Properties.Resources.resources
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.csproj.GenerateResource.cache
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.exe
+C:\Users\zoran.kovacevic\Desktop\MusicPlayerApp\obj\Debug\MusicPlayerApp.pdb
