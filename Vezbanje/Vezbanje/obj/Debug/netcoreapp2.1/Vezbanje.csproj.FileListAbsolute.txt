@@ -3,9 +3,9 @@ C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\bin\Debug\netcoreapp2.1\Vezba
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\bin\Debug\netcoreapp2.1\Vezbanje.runtimeconfig.dev.json
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\bin\Debug\netcoreapp2.1\Vezbanje.dll
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\bin\Debug\netcoreapp2.1\Vezbanje.pdb
-C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.csprojAssemblyReference.cache
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.csproj.CoreCompileInputs.cache
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.AssemblyInfoInputs.cache
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.AssemblyInfo.cs
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.dll
 C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.pdb
+C:\Users\zoran.kovacevic\Desktop\Vezbanje\Vezbanje\obj\Debug\netcoreapp2.1\Vezbanje.csprojAssemblyReference.cache
