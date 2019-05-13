@@ -1,0 +1,7 @@
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\bin\Debug\Vezbanje3.exe.config
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\bin\Debug\Vezbanje3.exe
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\bin\Debug\Vezbanje3.pdb
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\obj\Debug\Vezbanje3.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\obj\Debug\Vezbanje3.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\obj\Debug\Vezbanje3.exe
+C:\Users\zoran.kovacevic\Desktop\Vezbanje3\obj\Debug\Vezbanje3.pdb
