@@ -1,0 +1,7 @@
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\bin\Debug\TicTacToe2.exe.config
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\bin\Debug\TicTacToe2.exe
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\bin\Debug\TicTacToe2.pdb
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\obj\Debug\TicTacToe2.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\obj\Debug\TicTacToe2.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\obj\Debug\TicTacToe2.exe
+C:\Users\zoran.kovacevic\Desktop\TicTacToe2\obj\Debug\TicTacToe2.pdb
