@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace AdvancedCsharp
 {
+
+    enum Day { Mo, Tu, We, Th, Fr, Sa, Su};
+    enum Month { Jan = 1, Feb, Mar, Apr, May, Jun, Jul = 12, Aug, Sep, Oct, Nov, Dec};
     struct Game
     {
         public string name;
@@ -51,7 +54,57 @@ namespace AdvancedCsharp
             //Console.ReadLine();
 
             game1.Display();
+
+            Day fr = Day.Fr;
+            Day su = Day.Su;
+            Day a = Day.Fr;
+
+            Console.WriteLine(fr == a);
+
+            Console.WriteLine(Day.Mo);
+            Console.WriteLine((int)Day.Mo);
+
+            Console.WriteLine((int)Month.Jan);
+
+            Console.WriteLine("Ceilling: " + Math.Ceiling(15.3));
+            Console.WriteLine("Flooring: " + Math.Floor(15.3));
+
+            int num1 = 14;
+            int num2 = 9;
+            Console.WriteLine($"Lower of num1 {num1} and num2 {num2} is {Math.Min(num1, num2)}");
+            Console.WriteLine($"Higher of num1 {num1} and num2 {num2} is {Math.Max(num1, num2)}");
+            Console.WriteLine($"Math PI is: {Math.PI}");
+            Console.WriteLine($"cos of 1 is: {Math.Cos(1)}");
+
+            Random dice = new Random();
+            int numEyes;
+            for(int i = 0; i < 10; i++)
+            {
+                numEyes = dice.Next(1,7);
+                Console.WriteLine(numEyes);
+            }
+
+            Random yesNoMaybe = new Random();
+
+            Console.WriteLine("Please enter you question!");
+            Console.ReadLine();
+            int answerNum;
+            answerNum = yesNoMaybe.Next(1, 4);
+
+            if(answerNum == 1)
+            {
+                Console.WriteLine("Yes");
+            }else if(answerNum == 2)
+            {
+                Console.WriteLine("Maybe");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
+
             Console.ReadKey();
+
 
         }
 
