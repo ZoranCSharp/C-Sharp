@@ -1,0 +1,7 @@
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\bin\Debug\AdvancedCsharp.exe.config
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\bin\Debug\AdvancedCsharp.exe
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\bin\Debug\AdvancedCsharp.pdb
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\obj\Debug\AdvancedCsharp.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\obj\Debug\AdvancedCsharp.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\obj\Debug\AdvancedCsharp.exe
+C:\Users\zoran.kovacevic\Desktop\AdvancedCsharp\obj\Debug\AdvancedCsharp.pdb
