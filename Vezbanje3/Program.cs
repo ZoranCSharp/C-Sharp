@@ -8,6 +8,48 @@ namespace Vezbanje3
 {
     class Program
     {
+
+        public interface INotifications
+        {
+        //Members
+        void showNotification();
+        string getDate();
+
+        }
+
+        public class Notification : INotifications
+        {
+            private string sender;
+            private string message;
+            private string date;
+
+            //Default constructor
+            public Notification()
+            {
+                sender = "Admin";
+                message = "Yo, what's up?";
+                date = " ";
+
+            }
+
+            public Notification(string mySender, string myMessage, string myDate)
+            {
+                this.sender = mySender;
+                this.message = myMessage;
+                this.date = myDate;
+            } 
+
+            public void showNotification()
+            {
+                Console.WriteLine($"Message {message} - was sent by {sender} - date {date}");
+            }
+
+            public string getDate()
+            {
+                return date;
+            }
+        }
+    
         static void Main(string[] args)
         {
             Post post1 = new Post("'Thanks for the birthday wishes!!!'", true, "Zoran Kovacevic" );
@@ -53,6 +95,12 @@ namespace Vezbanje3
             Trainee michelle = new Trainee(32, 8, "Gartner", "Michelle", 10000);
             michelle.Learn();
             michelle.Work();
+
+            Notification n1 = new Notification("Denis", "Tsup bro?", "12.06.2018");
+            Notification n2 = new Notification("Frank", "All good buddy!", "12.06.2018");
+            n1.showNotification();
+            n2.showNotification();
+            n1.getDate();
             Console.ReadLine();
 
         }
