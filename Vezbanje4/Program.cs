@@ -48,6 +48,19 @@ namespace Vezbanje4
 
             Console.ReadLine();
 
+            // Example 1 - reading Text
+            string text = System.IO.File.ReadAllText(@"C:\Users\zoran.kovacevic\Desktop\Vezbanje4\textFile.txt");
+            Console.WriteLine($"Textfile contains following text: {text}");
+
+            // Example 2 - reading lines of text
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\zoran.kovacevic\Desktop\Vezbanje4\textFile.txt");
+            Console.WriteLine($"Contents of textFile.txt = ");
+
+            foreach(string line in lines)
+            {
+                Console.WriteLine("\t"+ line);
+            }
+            Console.ReadKey();
 
         }
     }
