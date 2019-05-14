@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,6 +48,30 @@ namespace Vezbanje4
             audi.GetCarIDInfo();
 
             Console.ReadLine();
+            // Method 1
+            string[] lines2 = { "First 250", "Second 242", "Third 240" };
+
+            File.WriteAllLines(@"C:\Users\zoran.kovacevic\Desktop\Vezbanje4\highscores.txt", lines2);
+
+            // Method 2
+            Console.WriteLine("Please give the file a name");            
+            string fileNames = Console.ReadLine();
+            Console.WriteLine("Please anter the text for the file");
+            string input = Console.ReadLine();
+
+            File.WriteAllText(@"C:\Users\zoran.kovacevic\Desktop\Vezbanje4\" + fileNames + ".txt", input);
+
+            // Method 3
+            using (StreamWriter file = new StreamWriter(@"C:\Users\zoran.kovacevic\Desktop\Vezbanje4\method3.txt"))
+            {
+                foreach (var line in lines2)
+                {
+                    if (line.Contains("Third"))
+                    {
+                        file.WriteLine(line);
+                    }
+                }
+            }
 
             // Example 1 - reading Text
             string text = System.IO.File.ReadAllText(@"C:\Users\zoran.kovacevic\Desktop\Vezbanje4\textFile.txt");
