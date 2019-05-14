@@ -1,0 +1,7 @@
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\bin\Debug\RegularExpressions.exe.config
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\bin\Debug\RegularExpressions.exe
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\bin\Debug\RegularExpressions.pdb
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\obj\Debug\RegularExpressions.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\obj\Debug\RegularExpressions.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\obj\Debug\RegularExpressions.exe
+C:\Users\zoran.kovacevic\Desktop\RegularExpressions\obj\Debug\RegularExpressions.pdb
