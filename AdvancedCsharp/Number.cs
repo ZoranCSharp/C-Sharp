@@ -9,5 +9,10 @@ namespace AdvancedCsharp
     class Number
     {
         public int n { get; set; }
+
+        public override string ToString()
+        {
+            return n.ToString();
+        }
     }
 }
