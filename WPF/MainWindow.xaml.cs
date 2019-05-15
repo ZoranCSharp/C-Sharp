@@ -29,5 +29,25 @@ namespace WPF
         {
             MessageBox.Show("Thanks for clicking me!");
         }
+
+        private void Button_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Mouse Up - Bubble Event!");
+        }
+
+        private void Button_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Preview Mouse Up - Tunneling Event!");
+        }
+
+        private void Button_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Preview Mouse Left Button Down - Tunneling Event!");
+        }
+              
+        private void Button_PreviewMouseRightButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Preview Mouse Right Button Up - Tunneling Event!");
+        }
     }
 }

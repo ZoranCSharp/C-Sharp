@@ -14,5 +14,7 @@
             <ListBoxItem Content="Item 3"></ListBoxItem>
         </ListBox>
         <Button Content="Click me" Click="Button_Click_1" Margin="20" Width="70"></Button>
+        <Button Content="Mouse Up" PreviewMouseUp="Button_PreviewMouseUp" Margin="20" Width="70"></Button>
+        <Button Content="Left - Right" PreviewMouseLeftButtonDown="Button_PreviewMouseLeftButtonDown" PreviewMouseRightButtonUp="Button_PreviewMouseRightButtonUp" Margin="20" Width="70"></Button>
     </StackPanel>
 </Window>
