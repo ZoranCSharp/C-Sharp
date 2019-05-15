@@ -29,12 +29,17 @@ namespace WPF
         public static readonly DependencyProperty myDependencyProperty = 
             DependencyProperty.Register("MyProperty", typeof(int), typeof(MainWindow), new PropertyMetadata(0));
 
+        public Sum SumObj { get; set; }
         public MainWindow()
         {
             InitializeComponent();
 
-            MySlider.Value = 30;
-            MyTextBox.Text = MySlider.Value.ToString();
+            //MySlider.Value = 30;
+            //MyTextBox.Text = MySlider.Value.ToString();
+
+            SumObj = new Sum { Num1 = "1", Num2 = "3" };
+            this.DataContext = SumObj;
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
