@@ -19,7 +19,16 @@ namespace WPF
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    { 
+        public int MyProperty
+        {
+            get { return (int)GetValue(myDependencyProperty); }
+            set { SetValue(myDependencyProperty, value); }
+        }
+
+        public static readonly DependencyProperty myDependencyProperty = 
+            DependencyProperty.Register("MyProperty", typeof(int), typeof(MainWindow), new PropertyMetadata(0));
+
         public MainWindow()
         {
             InitializeComponent();
@@ -44,10 +53,12 @@ namespace WPF
         {
             MessageBox.Show("Preview Mouse Left Button Down - Tunneling Event!");
         }
-              
+
         private void Button_PreviewMouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("Preview Mouse Right Button Up - Tunneling Event!");
         }
+
+
     }
 }
