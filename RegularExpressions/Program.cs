@@ -86,6 +86,51 @@ namespace RegularExpressions
             {
                 Console.WriteLine("Wrong input!!!");
             }
+
+            int? num1 = null;
+            int? num2 = 1337;
+
+            double? num3 = new double?();
+            double? num4 = 3.14157;
+
+            bool? boolval = new bool?();
+            Console.WriteLine($"Our nullable numbers are: {num1} {num2} {num3} {num4}");
+            Console.WriteLine($"The nullable boolean is: {boolval}");
+
+            bool? isMale = null;
+
+            if(isMale == true)
+            {
+                Console.WriteLine("User is male");
+            }else if(isMale == false)
+            {
+                Console.WriteLine("User is female");
+            }
+            else
+            {
+                Console.WriteLine("No geneder choosen");
+            }
+
+            double? num5 = 13.1;
+            double? num6 = null;
+
+            double num7;
+
+            if(num5 == 0)
+            {
+                num7 = 0.0;
+            }
+            else
+            {
+                num7 = (double)num5;
+            }
+            Console.WriteLine($"Value of num7 is: {num7}");
+
+            //Shorter: THE NULL COALESCING OPERATOR ??
+            num7 = num5 ?? 8.53;
+            Console.WriteLine($"Value of num7 is: {num7}");
+            num7 = num6 ?? 8.53;
+            Console.WriteLine($"Value of num7 is: {num7}");
             Console.ReadLine();
         }
 
