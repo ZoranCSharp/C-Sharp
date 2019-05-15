@@ -32,6 +32,9 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
+
+            MySlider.Value = 30;
+            MyTextBox.Text = MySlider.Value.ToString();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
