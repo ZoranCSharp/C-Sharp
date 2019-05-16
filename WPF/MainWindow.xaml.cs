@@ -48,7 +48,7 @@ namespace WPF
             //lbMatches.ItemsSource = matches;
 
             //comboBoxColors.ItemsSource = typeof(Colors).GetProperties();
-            rbMaybe.IsChecked = true;
+            //rbMaybe.IsChecked = true;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -131,7 +131,7 @@
         <TextBlock ToolTip="Please enter your age below" Width="70" Height="70">Age</TextBlock>
     </Grid>-->
 
-    <StackPanel Margin="10">
+    <!--<StackPanel Margin="10">
         <Label FontWeight="Bold" FontSize="20">Do you like me?</Label>
         <RadioButton Margin="5" Checked="Yes_Checked">
             <WrapPanel>
@@ -151,6 +151,76 @@
                 <TextBlock Text="Maybe" Foreground="DarkGoldenrod" Margin="5,0,0,0"></TextBlock>
             </WrapPanel>
         </RadioButton>
+    </StackPanel>-->
+
+    <StackPanel>
+        <Grid>
+            <TextBlock Text="Hello World!" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Foreground" Value="Green"></Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="Red"></Setter>
+                                <Setter Property="TextDecorations" Value="Underline"></Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+        </Grid>
+
+    
+        <Grid>
+            <TextBlock Text="Hello Buddy!" FontSize ="25" HorizontalAlignment = "Center" VerticalAlignment = "Center">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Style.Triggers>
+                            <!--Event Triger Enter-->
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.500" Storyboard.TargetProperty="FontSize" To = "72"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                            <!--Event Triger Leave-->
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0:0:0.300" Storyboard.TargetProperty="FontSize" To = "24"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+                
+        </Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <CheckBox Name="cbHello" Content="Is someone there?"></CheckBox>
+            <TextBlock HorizontalAlignment="Center" FontSize="36">
+                <TextBlock.Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Text" Value="No"></Setter>
+                        <Setter Property="Foreground" Value="Red"></Setter>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=cbHello, Path=IsChecked}" Value="True">
+                                <Setter Property="Text" Value="Of Course"></Setter>
+                                <Setter Property="Foreground" Value="Green"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </StackPanel>
+        
     </StackPanel>
         
 </Window>
