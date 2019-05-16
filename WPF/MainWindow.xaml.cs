@@ -45,7 +45,9 @@ namespace WPF
             matches.Add(new Match() { Team1 = "Team 1", Team2 = "Team 4", Score1 = 1, Score2 = 2, Completion = 85 });
             matches.Add(new Match() { Team1 = "Tema 2", Team2 = "Team 5", Score1 = 3, Score2 = 0, Completion = 50 });
             matches.Add(new Match() { Team1 = "Team 3", Team2 = "Team 6", Score1 = 1, Score2 = 1, Completion = 25 });
-            lbMatches.ItemsSource = matches;
+            //lbMatches.ItemsSource = matches;
+
+            comboBoxColors.ItemsSource = typeof(Colors).GetProperties();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -86,13 +88,13 @@ namespace WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(lbMatches.SelectedItem != null)
-            {
-                MessageBox.Show("Selected Match: " + (lbMatches.SelectedItem as Match).Team1 + " " 
-                    + (lbMatches.SelectedItem as Match).Score1 + " " 
-                    + (lbMatches.SelectedItem as Match).Score2 + " " 
-                    + (lbMatches.SelectedItem as Match).Team2);
-            }
+        //    if(lbMatches.SelectedItem != null)
+        //    {
+        //        MessageBox.Show("Selected Match: " + (lbMatches.SelectedItem as Match).Team1 + " " 
+        //            + (lbMatches.SelectedItem as Match).Score1 + " " 
+        //            + (lbMatches.SelectedItem as Match).Score2 + " " 
+        //            + (lbMatches.SelectedItem as Match).Team2);
+        //    }
         }
     }
 }

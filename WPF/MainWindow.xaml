@@ -69,7 +69,7 @@
         <TextBox Width="100" Height="30" Text="{Binding Path=Result, Mode=TwoWay}"></TextBox>
     </StackPanel>-->
 
-    <Grid>
+    <!--<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="100"></ColumnDefinition>
@@ -97,7 +97,20 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Button Grid.Column="1" Click="Button_Click">Show selected</Button>
-    </Grid>
+    </Grid>-->
+
+    <StackPanel>
+        <ComboBox Name="comboBoxColors">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Name}" Width="32" Height="32" Margin="5"></Rectangle>
+                        <TextBlock Text="{Binding Name}" FontSize="32"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            </ComboBox>
+    </StackPanel>
         
 </Window>
  
