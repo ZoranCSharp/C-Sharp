@@ -99,7 +99,7 @@
         <Button Grid.Column="1" Click="Button_Click">Show selected</Button>
     </Grid>-->
 
-    <StackPanel>
+    <!--<StackPanel>
         <ComboBox Name="comboBoxColors">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -110,6 +110,20 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
             </ComboBox>
+    </StackPanel>-->
+
+    <StackPanel>
+        <Label FontWeight="Bold">Pizza Topings</Label>
+        <CheckBox Name="cbAllTopings" IsThreeState="True" Checked="CbAllTopings_Checked" Unchecked="CbAllTopings_Checked">Add All</CheckBox>
+        <StackPanel Margin="10">
+            <CheckBox Name="cbSalami" Checked="CbSalami_Checked" Unchecked="CbSalami_Checked">
+                <TextBlock>
+                    Salami <Run Foreground="Red" FontWeight="Bold">Spicy</Run>
+                </TextBlock>
+            </CheckBox>
+            <CheckBox Name="cbMushrooms" Checked="CbSalami_Checked" Unchecked="CbSalami_Checked">Mushrooms</CheckBox>
+            <CheckBox Name="cbMozarella" Checked="CbSalami_Checked" Unchecked="CbSalami_Checked">Mozarella</CheckBox>
+        </StackPanel>
     </StackPanel>
         
 </Window>

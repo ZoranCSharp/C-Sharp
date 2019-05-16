@@ -47,7 +47,7 @@ namespace WPF
             matches.Add(new Match() { Team1 = "Team 3", Team2 = "Team 6", Score1 = 1, Score2 = 1, Completion = 25 });
             //lbMatches.ItemsSource = matches;
 
-            comboBoxColors.ItemsSource = typeof(Colors).GetProperties();
+            //comboBoxColors.ItemsSource = typeof(Colors).GetProperties();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -96,5 +96,30 @@ namespace WPF
         //            + (lbMatches.SelectedItem as Match).Team2);
         //    }
         }
+
+        private void CbAllTopings_Checked(object sender, RoutedEventArgs e)
+        {
+            bool newVal = (cbAllTopings.IsChecked == true);
+            cbSalami.IsChecked = newVal;
+            cbMozarella.IsChecked = newVal;
+            cbMushrooms.IsChecked = newVal;
+        }
+
+        private void CbSalami_Checked(object sender, RoutedEventArgs e)
+        {
+            cbAllTopings.IsChecked = null;
+            if((cbSalami.IsChecked == true) && (cbMozarella.IsChecked == true) && (cbMushrooms.IsChecked == true))
+            {
+                cbAllTopings.IsChecked = true;
+            }
+            if ((cbSalami.IsChecked == false) && (cbMozarella.IsChecked == false) && (cbMushrooms.IsChecked == false))
+            {
+                cbAllTopings.IsChecked = false;
+            }
+        }
+       
+
+      
+       
     }
 }
