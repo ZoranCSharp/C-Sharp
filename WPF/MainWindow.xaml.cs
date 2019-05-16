@@ -48,6 +48,7 @@ namespace WPF
             //lbMatches.ItemsSource = matches;
 
             //comboBoxColors.ItemsSource = typeof(Colors).GetProperties();
+            rbMaybe.IsChecked = true;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -117,9 +118,20 @@ namespace WPF
             //    cbAllTopings.IsChecked = false;
             //}
         }
-       
 
-      
-       
+        private void No_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Please say yes!");
+        }
+
+        private void Maybe_Checked(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show("Please say yes!");
+        }
+
+        private void Yes_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Thank You!");
+        }
     }
 }

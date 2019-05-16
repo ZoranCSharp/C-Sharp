@@ -126,10 +126,32 @@
         </StackPanel>
     </StackPanel>-->
 
-    <Grid>
+    <!--<Grid>
         <Button ToolTip="I'm a tooltip! I'm useful" Width="150" Height="100">Hover for more information</Button>
         <TextBlock ToolTip="Please enter your age below" Width="70" Height="70">Age</TextBlock>
-    </Grid>
+    </Grid>-->
+
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold" FontSize="20">Do you like me?</Label>
+        <RadioButton Margin="5" Checked="Yes_Checked">
+            <WrapPanel>
+                <Rectangle Fill="Green" Width="16" Height="16"></Rectangle>
+                <TextBlock Text="Yes" Foreground="Green" Margin="5,0,0,0"></TextBlock>                
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Margin="5" Checked="No_Checked">
+            <WrapPanel>
+                <Rectangle Fill="Red" Width="16" Height="16"></Rectangle>
+                <TextBlock Text="No" Foreground="Red" Margin="5,0,0,0"></TextBlock>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Name="rbMaybe" IsChecked="True" Margin="5" Checked="Maybe_Checked">
+            <WrapPanel>
+                <Image Source="C:\Users\zoran.kovacevic\Desktop\WPF\maybe.jpg" Width="43" Height="43"></Image>
+                <TextBlock Text="Maybe" Foreground="DarkGoldenrod" Margin="5,0,0,0"></TextBlock>
+            </WrapPanel>
+        </RadioButton>
+    </StackPanel>
         
 </Window>
  
