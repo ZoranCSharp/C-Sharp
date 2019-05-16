@@ -133,5 +133,10 @@ namespace WPF
         {
             MessageBox.Show("Thank You!");
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Welcome {tbUsername}");
+        }
     }
 }

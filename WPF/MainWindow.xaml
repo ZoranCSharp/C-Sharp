@@ -220,8 +220,18 @@
                 </TextBlock.Style>
             </TextBlock>
         </StackPanel>
+
+        <StackPanel>
+            <Label>Username</Label>
+            <TextBox Name="tbUsername"></TextBox>
+            <Label>Password</Label>
+            <PasswordBox MaxLength="14" PasswordChar="*"></PasswordBox>
+            <Button Margin="5" Content="Login" Click="Button_Click_2"></Button>
+        </StackPanel>
         
     </StackPanel>
+
+    
         
 </Window>
  
