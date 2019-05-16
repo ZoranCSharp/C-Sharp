@@ -60,13 +60,44 @@
         <Slider IsSnapToTickEnabled="True" Name="MySlider" Minimum="0" Maximum="100"></Slider>
     </StackPanel>-->
 
-    <StackPanel>
+    <!--<StackPanel>
         <Label Content="Num1"></Label>
         <TextBox Width="100" Height="30" Text="{Binding Path=Num1, Mode=TwoWay}"></TextBox>
         <Label Content="Num2"></Label>
         <TextBox Width="100" Height="30" Text="{Binding Path=Num2, Mode=TwoWay}"></TextBox>
         <Label Content="SUM"></Label>
         <TextBox Width="100" Height="30" Text="{Binding Path=Result, Mode=TwoWay}"></TextBox>
-    </StackPanel>
+    </StackPanel>-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListBox Name="lbMatches" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding Team1}"></TextBlock>
+                        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="{Binding Score1}"></TextBlock>
+                        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="{Binding Score2}"></TextBlock>
+                        <TextBlock Grid.Column="3" Text="{Binding Team2}"></TextBlock>
+                        <ProgressBar Grid.Column="4" Minimum="0" Maximum="90" Value="{Binding Completion}"></ProgressBar>
+                        
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Grid.Column="1" Click="Button_Click">Show selected</Button>
+    </Grid>
         
 </Window>
+ 

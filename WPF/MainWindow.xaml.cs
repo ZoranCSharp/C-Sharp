@@ -37,9 +37,15 @@ namespace WPF
             //MySlider.Value = 30;
             //MyTextBox.Text = MySlider.Value.ToString();
 
-            SumObj = new Sum { Num1 = "1", Num2 = "3" };
-            this.DataContext = SumObj;
-            
+            //SumObj = new Sum { Num1 = "1", Num2 = "3" };
+            //this.DataContext = SumObj;
+
+            List<Match> matches = new List<Match>();
+            matches.Add(new Match() { Team1 = "Bayern Munich", Team2 = "Real Madrid", Score1 = 3, Score2 = 2, Completion = 85 });
+            matches.Add(new Match() { Team1 = "Team 1", Team2 = "Team 4", Score1 = 1, Score2 = 2, Completion = 85 });
+            matches.Add(new Match() { Team1 = "Tema 2", Team2 = "Team 5", Score1 = 3, Score2 = 0, Completion = 50 });
+            matches.Add(new Match() { Team1 = "Team 3", Team2 = "Team 6", Score1 = 1, Score2 = 1, Completion = 25 });
+            lbMatches.ItemsSource = matches;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -67,6 +73,26 @@ namespace WPF
             MessageBox.Show("Preview Mouse Right Button Up - Tunneling Event!");
         }
 
+        public class Match
+        {
+            public int Score1 { get; set; }
+            public int Score2 { get; set; }
 
+            public string Team1 { get; set; }
+            public string Team2 { get; set; }
+
+            public int Completion { get; set; }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(lbMatches.SelectedItem != null)
+            {
+                MessageBox.Show("Selected Match: " + (lbMatches.SelectedItem as Match).Team1 + " " 
+                    + (lbMatches.SelectedItem as Match).Score1 + " " 
+                    + (lbMatches.SelectedItem as Match).Score2 + " " 
+                    + (lbMatches.SelectedItem as Match).Team2);
+            }
+        }
     }
 }
