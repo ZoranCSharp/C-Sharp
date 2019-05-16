@@ -99,23 +99,23 @@ namespace WPF
 
         private void CbAllTopings_Checked(object sender, RoutedEventArgs e)
         {
-            bool newVal = (cbAllTopings.IsChecked == true);
-            cbSalami.IsChecked = newVal;
-            cbMozarella.IsChecked = newVal;
-            cbMushrooms.IsChecked = newVal;
+            //bool newVal = (cbAllTopings.IsChecked == true);
+            //cbSalami.IsChecked = newVal;
+            //cbMozarella.IsChecked = newVal;
+            //cbMushrooms.IsChecked = newVal;
         }
 
         private void CbSalami_Checked(object sender, RoutedEventArgs e)
         {
-            cbAllTopings.IsChecked = null;
-            if((cbSalami.IsChecked == true) && (cbMozarella.IsChecked == true) && (cbMushrooms.IsChecked == true))
-            {
-                cbAllTopings.IsChecked = true;
-            }
-            if ((cbSalami.IsChecked == false) && (cbMozarella.IsChecked == false) && (cbMushrooms.IsChecked == false))
-            {
-                cbAllTopings.IsChecked = false;
-            }
+            //cbAllTopings.IsChecked = null;
+            //if((cbSalami.IsChecked == true) && (cbMozarella.IsChecked == true) && (cbMushrooms.IsChecked == true))
+            //{
+            //    cbAllTopings.IsChecked = true;
+            //}
+            //if ((cbSalami.IsChecked == false) && (cbMozarella.IsChecked == false) && (cbMushrooms.IsChecked == false))
+            //{
+            //    cbAllTopings.IsChecked = false;
+            //}
         }
        
 
