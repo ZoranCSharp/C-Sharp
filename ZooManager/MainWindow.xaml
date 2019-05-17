@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Zoo List" HorizontalAlignment="Left" Margin="80,53,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="listZoos" HorizontalAlignment="Left" Height="155" Margin="47,84,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Zoo List" HorizontalAlignment="Left" Margin="76,55,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="listZoos" HorizontalAlignment="Left" Height="155" Margin="43,86,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ListZoos_SelectionChanged"/>
+        <Label Content="Associated Animals List
+               " HorizontalAlignment="Left" Margin="232,55,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listAssociatedAnimals" HorizontalAlignment="Left" Height="155" Margin="236,86,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
