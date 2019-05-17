@@ -1,5 +1,8 @@
-﻿CREATE TABLE [dbo].[Table]
+﻿CREATE TABLE [dbo].ZooAnimal
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [Location] NVARCHAR(50) NOT NULL
+    [ZooId] INT NOT NULL, 
+    [AnimalId] INT NOT NULL, 
+    CONSTRAINT [ZooFK] FOREIGN KEY (ZooId) REFERENCES Zoo(Id), 
+    CONSTRAINT [AnimalFK] FOREIGN KEY (AnimalId) REFERENCES Animal(Id)
 )
