@@ -73,6 +73,9 @@ namespace Linq
                 Console.WriteLine(i);
             }
 
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            univer.StudentAndUniversityNameCollection();
+
 
             Console.ReadLine();
         }

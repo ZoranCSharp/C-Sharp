@@ -94,5 +94,22 @@ namespace Linq
             }
 
         }
+
+        public void StudentAndUniversityNameCollection()
+        {
+            var newCollection = from stud in student
+                                join university in universities on stud.UniversityId equals university.Id
+                                orderby stud.Name
+                                select new { StudentName = stud.Name, UniversityName = university.Name };
+
+            Console.WriteLine($"New Collection: ");
+
+            foreach (var col in newCollection)
+            {
+                Console.WriteLine($"Student {col.StudentName} from University {col.UniversityName}"); 
+
+            }
+        }
+
     }
 }
