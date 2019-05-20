@@ -1,0 +1,15 @@
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\bin\Debug\LinqToSQL.exe.config
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\bin\Debug\LinqToSQL.exe
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\bin\Debug\LinqToSQL.pdb
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\MainWindow.g.cs
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\App.g.cs
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL_MarkupCompile.cache
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL_MarkupCompile.lref
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\MainWindow.baml
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.g.resources
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.Properties.Resources.resources
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.csproj.GenerateResource.cache
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.exe
+C:\Users\zoran.kovacevic\Desktop\LinqToSQL\obj\Debug\LinqToSQL.pdb
