@@ -47,7 +47,11 @@ namespace LinqToSQL
 
             //GetAllUniversitiesWithTransgenders();
 
-            GetAllLecturesFromNeijingTech();
+            //GetAllLecturesFromNeijingTech();
+
+            //UpdateToni();
+
+            DeleteJame();
         }
 
 
@@ -174,6 +178,34 @@ namespace LinqToSQL
                                           select sl.Lecture;
 
             MainDataGrid.ItemsSource = lecturesFromBeijingTech;
+        }
+
+        public void UpdateToni()
+        {
+            Student Anotnio = dataContext.Students.FirstOrDefault(st => st.Name == "Anotnio");
+            Anotnio.Name = "Antonio";
+
+            dataContext.SubmitChanges();
+            MainDataGrid.ItemsSource = dataContext.Students;
+        }
+
+        public void DeleteJame()
+        {
+            Student Jame = dataContext.Students.FirstOrDefault(st => st.Name == "Jame");
+            dataContext.Students.DeleteOnSubmit(Jame);
+            dataContext.SubmitChanges();
+
+
+            //if Delete doesnt work, we need to re-establish connection with db
+            /*
+             * string connectionstring = ConfigurationManager.ConnectionStrings["LinqToSQL.Properties.Settings.ZooConnectionString"].ConnectionString;
+            LinqToSqlDataClassesDataContext db = new LinqToSqlDataClassesDataContext(connectionstring);
+
+            MainDataGrid.ItemsSource = db.Students;
+             *
+             */
+
+            MainDataGrid.ItemsSource = dataContext.Students;
         }
        
     }
