@@ -10,26 +10,34 @@ namespace Linq
     {
         static void Main(string[] args)
         {
-            int[] number = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //int[] number = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-            OddNumbers(number);
+            //OddNumbers(number);
+
+            UniversityMenager univer = new UniversityMenager();
+            Console.ForegroundColor = ConsoleColor.Green;
+            univer.MalesStudents();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            univer.FemaleStudents();
+
+
             Console.ReadKey();
         }
 
-        static void OddNumbers(int[] numbers)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Odd Number: ");
+        //static void OddNumbers(int[] numbers)
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Green;
+        //    Console.WriteLine($"Odd Number: ");
 
-            IEnumerable<int> oddNumbers = from number in numbers where number % 2 != 0 select number;
+        //    IEnumerable<int> oddNumbers = from number in numbers where number % 2 != 0 select number;
 
-            Console.WriteLine(oddNumbers+"\n");
+        //    Console.WriteLine(oddNumbers+"\n");
             
-            foreach(int i in oddNumbers)
-            {
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine(i);
-            }
-        }
+        //    foreach(int i in oddNumbers)
+        //    {
+        //        Console.ForegroundColor = ConsoleColor.Magenta;
+        //        Console.WriteLine(i);
+        //    }
+        //}
     }
 }
