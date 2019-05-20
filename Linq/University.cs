@@ -9,12 +9,12 @@ namespace Linq
     class University
     {
 
-    public int Id {get; set;}
-    public string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
 
-    public void Print()
-    {
+        public void Print()
+        {
             Console.WriteLine($"University {Name} with id {Id}");
+        }
     }
-}
 }

@@ -17,11 +17,64 @@ namespace Linq
             UniversityMenager univer = new UniversityMenager();
             Console.ForegroundColor = ConsoleColor.Green;
             univer.MalesStudents();
+            Console.WriteLine("\n");
+
             Console.ForegroundColor = ConsoleColor.Blue;
             univer.FemaleStudents();
+            Console.WriteLine("\n");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            univer.SortStudentByAge();
+            Console.WriteLine("\n");
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            univer.allStudentFromBeijingTech();
+            Console.WriteLine("\n");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Enter University Id: ");
+            //int uniId = Int32.Parse(Console.ReadLine());
+
+            bool test = true;
+           
+                do
+                {
+                    string input = Console.ReadLine();
+                    try
+                    {
+
+                        int uniId = Convert.ToInt32(input);
+                        univer.AllStudentsFromThatUni(uniId);
 
 
-            Console.ReadKey();
+                    }
+                    catch (Exception)
+                    {
+                    if (input == "exit")
+                        break;
+                    Console.WriteLine("Wrong Value");
+                        test = false;
+                   
+                    }
+                } while (test == false);
+
+            int[] someInt = { 30, 125, 4, 3, 12 };
+            IEnumerable<int> sortedInts = from i in someInt orderby i select i;
+            IEnumerable<int> reverseInts = sortedInts.Reverse();
+
+            foreach (int i in reverseInts)
+            {
+                Console.WriteLine(i);
+            }
+
+            IEnumerable<int> reversedSordetInts = from i in someInt orderby i descending select i;
+            foreach (int i in reversedSordetInts)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            Console.ReadLine();
         }
 
         //static void OddNumbers(int[] numbers)
@@ -32,7 +85,7 @@ namespace Linq
         //    IEnumerable<int> oddNumbers = from number in numbers where number % 2 != 0 select number;
 
         //    Console.WriteLine(oddNumbers+"\n");
-            
+
         //    foreach(int i in oddNumbers)
         //    {
         //        Console.ForegroundColor = ConsoleColor.Magenta;
