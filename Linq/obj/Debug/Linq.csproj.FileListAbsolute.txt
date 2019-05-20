@@ -1,0 +1,7 @@
+C:\Users\zoran.kovacevic\Desktop\Linq\bin\Debug\Linq.exe.config
+C:\Users\zoran.kovacevic\Desktop\Linq\bin\Debug\Linq.exe
+C:\Users\zoran.kovacevic\Desktop\Linq\bin\Debug\Linq.pdb
+C:\Users\zoran.kovacevic\Desktop\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\Linq\obj\Debug\Linq.exe
+C:\Users\zoran.kovacevic\Desktop\Linq\obj\Debug\Linq.pdb
