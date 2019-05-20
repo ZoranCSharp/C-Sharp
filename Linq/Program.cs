@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Linq
 {
@@ -76,6 +77,63 @@ namespace Linq
             Console.ForegroundColor = ConsoleColor.Yellow;
             univer.StudentAndUniversityNameCollection();
 
+
+            Console.WriteLine("\n");
+            //We simply  apply our Student-Structure to XML
+            string studentsXML =
+                @"<Students>
+                    <Student>
+                      <Name>Zoran</Name>
+                      <Age>21</Age>
+                      <University>Yale</University>
+                      <Semester>First</Semester>
+                    </Student>
+                    <Student>
+                      <Name>Ime1</Name>
+                      <Age>17</Age>
+                      <University>Yale</University>
+                      <Semester>Second</Semester>
+                    </Student>
+                    <Student>
+                      <Name>Ime2</Name>
+                      <Age>27</Age>
+                      <University>Yale</University>
+                      <Semester>Third</Semester>
+                    </Student>
+                    <Student>
+                      <Name>Ime3</Name>
+                      <Age>27</Age>
+                      <University>Yale</University>
+                      <Semester>First</Semester>
+                    </Student>
+                  </Students>";
+
+            XDocument studentsXdoc = new XDocument();
+            studentsXdoc = XDocument.Parse(studentsXML);
+
+            var studentsX = from student in studentsXdoc.Descendants("Student")
+                            select new
+                            {
+                                Name = student.Element("Name").Value,
+                                Age = student.Element("Age").Value,
+                                University = student.Element("University").Value,
+                                Semester = student.Element("Semester").Value
+
+                            };
+
+            foreach (var student in studentsX)
+            {
+                Console.WriteLine($"Student {student.Name} with  age {student.Age} from {student.University} University. Semester - {student.Semester}");
+            }
+            Console.WriteLine("\n");
+
+            var sortedStudents = from stud in studentsX
+                                 orderby stud.Age
+                                 select stud;
+            foreach (var student in sortedStudents)
+            {
+                Console.WriteLine($"Student {student.Name} with  age {student.Age} from {student.University} University. Semester - {student.Semester}");
+            }
 
             Console.ReadLine();
         }
