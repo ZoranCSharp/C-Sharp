@@ -1,0 +1,7 @@
+C:\Users\zoran.kovacevic\Desktop\Threads\bin\Debug\Threads.exe.config
+C:\Users\zoran.kovacevic\Desktop\Threads\bin\Debug\Threads.exe
+C:\Users\zoran.kovacevic\Desktop\Threads\bin\Debug\Threads.pdb
+C:\Users\zoran.kovacevic\Desktop\Threads\obj\Debug\Threads.csprojAssemblyReference.cache
+C:\Users\zoran.kovacevic\Desktop\Threads\obj\Debug\Threads.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\Threads\obj\Debug\Threads.exe
+C:\Users\zoran.kovacevic\Desktop\Threads\obj\Debug\Threads.pdb
