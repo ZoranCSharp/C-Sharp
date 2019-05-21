@@ -11,42 +11,23 @@ namespace Threads
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //Thread.Sleep(1000);
-            //Console.WriteLine("Hello World!");
-            //Thread.Sleep(1000);
-            //Console.WriteLine("Hello World!");
-            //Thread.Sleep(1000);
-            //Console.WriteLine("Hello World!");
-            //Thread.Sleep(1000);
-            //Console.WriteLine("Hello World!");
-            //Thread.Sleep(1000);
 
-            new Thread(() =>
+            var taskCompletionSource = new TaskCompletionSource<bool>();
+            var thread = new Thread(() =>
             {
+                Console.WriteLine($"Thread number: {Thread.CurrentThread.ManagedThreadId} started!");
                 Thread.Sleep(1000);
-                Console.WriteLine("Thread One");
-            }).Start();
-
-            new Thread(() =>
-            {
-                Thread.Sleep(1000);
-                Console.WriteLine("Thread Two");
-            }).Start();
-
-            new Thread(() =>
-            {
-                Thread.Sleep(1000);
-                Console.WriteLine("Thread Three");
-            }).Start();
-
-            new Thread(() =>
-            {
-                Thread.Sleep(1000);
-                Console.WriteLine("Thread Four");
-            }).Start();
+                taskCompletionSource.TrySetResult(true);
+                Console.WriteLine($"Thread number: {Thread.CurrentThread.ManagedThreadId} ended!");
+            });
 
            
+            thread.Start();
+            var test = taskCompletionSource.Task.Result;
+            Console.WriteLine($"Task was done {test}");
+           
+
+
             Console.ReadLine();
         }
     }
