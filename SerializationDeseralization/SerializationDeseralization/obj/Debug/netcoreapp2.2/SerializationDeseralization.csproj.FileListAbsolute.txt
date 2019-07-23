@@ -1,0 +1,11 @@
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\bin\Debug\netcoreapp2.2\SerializationDeseralization.deps.json
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\bin\Debug\netcoreapp2.2\SerializationDeseralization.runtimeconfig.json
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\bin\Debug\netcoreapp2.2\SerializationDeseralization.runtimeconfig.dev.json
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\bin\Debug\netcoreapp2.2\SerializationDeseralization.dll
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\bin\Debug\netcoreapp2.2\SerializationDeseralization.pdb
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\obj\Debug\netcoreapp2.2\SerializationDeseralization.csproj.CoreCompileInputs.cache
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\obj\Debug\netcoreapp2.2\SerializationDeseralization.AssemblyInfoInputs.cache
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\obj\Debug\netcoreapp2.2\SerializationDeseralization.AssemblyInfo.cs
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\obj\Debug\netcoreapp2.2\SerializationDeseralization.dll
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\obj\Debug\netcoreapp2.2\SerializationDeseralization.pdb
+C:\Users\zoran.kovacevic\Desktop\SerializationDeseralization\SerializationDeseralization\obj\Debug\netcoreapp2.2\SerializationDeseralization.csprojAssemblyReference.cache

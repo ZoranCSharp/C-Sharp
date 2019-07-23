@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ArrayOfAnimal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Animal>
+    <Name>Nenad</Name>
+    <Weight>200</Weight>
+    <Height>120</Height>
+    <AnimalID>2</AnimalID>
+    <Eemployee>
+      <Name>Civ</Name>
+      <LastName>Vava</LastName>
+      <DOB>2019-12-30</DOB>
+    </Eemployee>
+  </Animal>
+  <Animal>
+    <Name>Milorad</Name>
+    <Weight>300</Weight>
+    <Height>220</Height>
+    <AnimalID>3</AnimalID>
+    <Eemployee>
+      <Name>Grok</Name>
+      <LastName>Grokic</LastName>
+      <DOB>2019-12-30</DOB>
+    </Eemployee>
+  </Animal>
+  <Animal>
+    <Name>Misojcic</Name>
+    <Weight>500</Weight>
+    <Height>300</Height>
+    <AnimalID>4</AnimalID>
+    <Eemployee>
+      <Name>Slon</Name>
+      <LastName>Slonovski</LastName>
+      <DOB>2019-12-30</DOB>
+    </Eemployee>
+  </Animal>
+</ArrayOfAnimal>

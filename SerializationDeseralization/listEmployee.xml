@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <Name>Nenad</Name>
+    <LastName>Krantic</LastName>
+    <DOB>2019-12-30</DOB>
+  </Employee>
+  <Employee>
+    <Name>Marko</Name>
+    <LastName>Misojcic</LastName>
+    <DOB>2018-12-15</DOB>
+  </Employee>
+  <Employee>
+    <Name>Milos</Name>
+    <LastName>Obilic</LastName>
+    <DOB>2100-12-15</DOB>
+  </Employee>
+  <Employee>
+    <Name>Kruska</Name>
+    <LastName>Kruskic</LastName>
+    <DOB>2090-11-20</DOB>
+  </Employee>
+  <Employee>
+    <Name>Ruska</Name>
+    <LastName>Ruzic</LastName>
+    <DOB>2012-09-17</DOB>
+  </Employee>
+  <Employee>
+    <Name>Pera</Name>
+    <LastName>Peric</LastName>
+    <DOB>2015-05-20</DOB>
+  </Employee>
+</ArrayOfEmployee>
